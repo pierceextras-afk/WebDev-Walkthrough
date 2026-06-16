@@ -1,0 +1,94 @@
+/* CSS Comment: Global Styles and Box Model Control */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f7f4; /* Light coastal tint */
+    color: #222222;
+    line-height: 1.6;
+}
+
+/* Custom Text Alignment & Decoration Selectors */
+h1, h2 {
+    color: #124e70; /* Deep Ocean Blue */
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    font-style: italic;
+    text-decoration: underline; /* Text decoration demo */
+    color: #31859c;
+}
+
+/* Box Model: Main Container Spacing */
+.main-container {
+    max-width: 900px;
+    margin: 80px auto 40px auto; /* Margin creates spacing around element */
+    padding: 30px;               /* Padding creates space inside element */
+    background-color: #ffffff;
+    border: 1px solid #d0e1d4;   /* Border separates container from background */
+    border-radius: 8px;
+}
+
+/* Fixed Positioning & Stacking (z-index) */
+.fixed-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #124e70;
+    padding: 15px;
+    text-align: center;
+    z-index: 9999; /* Ensures navbar stays stacked above text during scroll */
+}
+
+/* Pseudo-Class Link State Styling */
+.fixed-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.fixed-nav a:visited {
+    color: #d0e1d4; /* Visited state color change */
+}
+
+.fixed-nav a:hover {
+    color: #ff9f1c; /* Golden coral hover effect */
+    text-decoration: underline;
+}
+
+/* Layout Flow Control: Float */
+.floating-image {
+    float: right;            /* Content flows and wraps around this element */
+    margin-left: 20px;
+    margin-bottom: 15px;
+    border: 4px solid #124e70;
+}
+
+/* Table Formatting */
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.data-table th, .data-table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #dddddd;
+}
+
+.data-table th {
+    background-color: #124e70;
+    color: white;
+}
+
+section {
+    margin-top: 30px;
+}
