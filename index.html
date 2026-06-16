@@ -2,17 +2,52 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My WebDev Project</title>
+    <title>Invasive Lionfish Crisis</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <nav>
-        <a href="index.html">Home</a> | 
-        <a href="about.html">About</a>
+    <nav class="fixed-nav">
+        <a href="index.html">Home</a>
+        <a href="impact.html">Ecological Impact</a>
+        <a href="#overview">Overview</a>
+        <a href="#threats">The Threat</a>
     </nav>
 
-    <h1>Welcome to My Website</h1>
-    <p>This is the homepage for my web development assignment.</p>
+    <div class="main-container">
+        
+        <header>
+            <h1>The Lionfish Invasion</h1>
+            <p class="subtitle">An urgent threat to Atlantic marine ecosystems</p>
+        </header>
+
+        <hr>
+
+        <section id="overview">
+            <h2>Overview of the Crisis</h2>
+            <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=500" 
+                 alt="A venomous red lionfish swimming over a coral reef" 
+                 width="400" 
+                 height="270" 
+                 class="floating-image">
+                 
+            <p>Native to the Indo-Pacific, lionfish were introduced to the Atlantic Ocean in the late 20th century. With no natural predators in these new waters, their populations have exploded. They are ravenous predators that consume native fish at alarming rates, disrupting local food chains and destroying fragile coral reef environments.</p>
+            
+            <p>They possess <span style="color: #d9381e; font-weight: bold;">18 venomous spines</span> along their backs for defense, making them dangerous to both marine life and human divers who attempt to harvest them. <br> <br> Immediate intervention is required to manage their rapid spread throughout the Caribbean and Gulf of Mexico.</p>
+        </section>
+
+        <section id="threats">
+            <h2>Why Are They Winning?</h2>
+            <p>Lionfish possess unique biological advantages that allow them to outcompete local species:</p>
+            <ul>
+                <li><strong>Rapid Reproduction:</strong> A single female can release up to 2 million eggs per year.</li>
+                <li><strong>Indiscriminate Eating:</strong> They can expand their stomachs up to 30 times its normal volume to gorge on prey.</li>
+                <li><strong>Camouflage:</strong> Native prey do not recognize them as predators due to their unusual stripes and fans.</li>
+            </ul>
+            <p>To learn more detailed statistics, jump over to our <a href="impact.html" title="View regional impact data">Ecological Impact page</a>.</p>
+        </section>
+
+    </div>
 
 </body>
 </html>
